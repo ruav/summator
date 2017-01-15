@@ -1,0 +1,6 @@
+2017-01-15 23:09:31,608 [WARN ][Thread-0][       Counter] - /home/ruav/test.file contains not only digits
+2017-01-15 23:09:31,622 [WARN ][Thread-0][       Counter] - Файлы содержат латиницу, поэтому статистика не верна.
+2017-01-15 23:20:53,716 [WARN ][Thread-0][       Counter] - /home/ruav/test.file contains not only digits
+2017-01-15 23:20:53,723 [WARN ][Thread-0][       Counter] - Файлы содержат латиницу, поэтому статистика не верна.
+2017-01-15 23:21:27,688 [WARN ][Thread-0][       Counter] - /home/ruav/test.file contains not only digits
+2017-01-15 23:21:27,694 [WARN ][Thread-0][       Counter] - Файлы содержат латиницу, поэтому статистика не верна.
