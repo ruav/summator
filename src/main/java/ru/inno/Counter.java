@@ -89,11 +89,15 @@ public class Counter implements Runnable{
                             }
                             // проверка на латиницу. Если есть латиница, то генерируем общий останов.
                             String[] str1 = str.split(" ");
-                            int count = Arrays.stream(str1).map(Integer::parseInt)
-                                    .filter((s) -> s > 0)
-                                    .reduce(0, Integer::sum);
-                            Controller.count += count;
-                            System.out.println(count + " : " + Controller.count);
+                            try {
+                                int count = Arrays.stream(str1).map(Integer::parseInt)
+                                        .filter((s) -> s > 0)
+                                        .reduce(0, Integer::sum);
+                                Controller.count += count;
+                                System.out.println(count + " : " + Controller.count);
+                            }catch (Exception e){
+                                Controller.breakAll = true;
+                            }
                         }
                     }
                 }
